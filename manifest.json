@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Definitely Google Docs",
+    "description": "Create and edit documents. Nothing else.",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/docsImage16.png",
+        "48": "/images/docsImage48.png",
+        "128": "/images/docsImage128.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["gotem.js"]
+    }],
+    "action": {
+        "default_popup": "extension_page.html",
+        "default_title": "Manager"
+    }
+
+}
+    
+
+
+  
